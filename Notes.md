@@ -96,9 +96,26 @@ Remember we can  create Policies, then create IAM user Groups then attach polici
 
 
 5. Test User's Access.
+Copy the "Console sign-in URL"  Do not close this tab!
+Open a new incognito window on your browser.
+Open the new console sign-in URL in your incognito window.
+Using the User name and Console password given in your IAM tab, let's log in!
 
+As a new user, the AWS console will treat you as someone that is starting from 0 again. Awesome for the new team member that you'll be giving this User to!
 
-   
+As a new user, you'll notice that some of your dashboard panels are showing "Access denied" already!
+
+If you try to stop an instance like "Production Instance" it will fail because you were not authorized with permissions to do that. 
+
+Only development instance you have permissions to. remember IAM policy stringEqauals to development EC2 tag.
+
+Try to stop development instance, you'll see that you can.
+
+### Understand Zero Trust Policy ###
+### Understand Principle of Least Priviledge access ###
+
+## End of Project 1.##
+
 
 
 

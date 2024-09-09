@@ -114,6 +114,25 @@ Only development instance you have permissions to. remember IAM policy stringEqa
 
 Try to stop development instance, you'll see that you can.
 
+6. ### IAM Policy Simulator ###
+ 💡 Have you noticed that to test out the effectiveness of our policy, we had to shut down the instance? In the real world, you might not want to actually shut down your EC2 instances just to test your custom IAM policy (this could get pretty disruptive).
+
+The ***IAM Policy Simulator*** lets you test and validate your policies without affecting your actual AWS resources. Let's try it out!
+Head back to your main AWS account (not the dev user!).
+In your IAM dashboard, look for the Policy Simulator link under the Tools panel.
+
+Link is https://policysim.aws.amazon.com/home/index.jsp
+
+Step 1: Select your user from IAM user group.
+Step 2 : Select an AWS Service
+Step 3: Select one or More Actions
+Step 4: Run Simulation to see if allowed or denied.
+
+
+
+### You have to keep track of your resources you created and delete them###
+
+
 ### Understand Zero Trust Policy ###
 ### Understand Principle of Least Priviledge access ###
 

@@ -5,6 +5,9 @@ AWS  Services Used in this Project.
 👩‍👩‍👧‍👧 IAM Users and User Groups
 
 
+<img width="645" alt="architecture" src="https://github.com/user-attachments/assets/ce503640-5052-45e6-ac80-be3a69b3d6bf">
+
+
 
 1.Launching 💻 EC2 instances with tags.
 

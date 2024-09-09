@@ -35,8 +35,37 @@ Key information of an  IAM Policy is " Statemetn, Effect, Resource,Action".
 Select Cretate Policy, we can use visual steps or JSON.
 
 Sample json code is :
+```json
+{    
+  "Version": "2012-10-17",    
+  "Statement": [        
+    {            
+      "Effect": "Allow",            
+      "Action": "ec2:*",            
+      "Resource": "*",            
+      "Condition": {                
+        "StringEquals": {                    
+          "ec2:ResourceTag/Env": "development"                
+        }            
+      }        
+    },        
+    {            
+      "Effect": "Allow",            
+      "Action": "ec2:Describe*",            
+      "Resource": "*"        
+    },        
+    {            
+      "Effect": "Deny",            
+      "Action": [                
+        "ec2:DeleteTags",                
+        "ec2:CreateTags"            
+      ],            
+      "Resource": "*"        
+    }    
+  ] 
+}
 
-
+```
 
 
 

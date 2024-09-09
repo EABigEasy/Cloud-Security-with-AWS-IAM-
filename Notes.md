@@ -1,11 +1,12 @@
 AWS  Services Used in this Project.
 💻 EC2 instances
 📏 IAM Policies
-👩‍👩‍👧‍👧 IAM Users and User Groups
 🔖 AWS Account Alias
+👩‍👩‍👧‍👧 IAM Users and User Groups
 
 
-1. Launching 💻 EC2 instances with tags.
+
+1.Launching 💻 EC2 instances with tags.
 
 We launch 2 Instances, 
 First Instance is created name NextWorkProduction and with with production tag e.g  Key : env Value  :production
@@ -27,12 +28,14 @@ It's always safer and more flexible to have a key pair set up, so you would crea
 
 2.📏 IAM Policies
 IAM manages  access to our AWS Resources.
-we create Policies attach to IAM Groups, Then add IAM users to our IAM groups.
+we create Policies, then attach to IAM Groups, Then add IAM users to our IAM groups.
 This is different from a Resourcce Policy.
 
-Key information of an  IAM Policy is " Statemetn, Effect, Resource,Action".
-
-Select Cretate Policy, we can use visual steps or JSON.
+Key information of an  IAM Policy is " Statement, Effect, Resource,Action, Condition ".
+Action : what services
+resource: * means all. 
+Effects are: allow. deny,notaction
+Select Create Policy, we can use visual steps or JSON.
 
 Sample json code is :
 ```json
@@ -66,13 +69,36 @@ Sample json code is :
 }
 
 ```
+Click on the Visual to see the resources permissions. Then Create Policy name similar to the tags environment e.g NextWorkDevEnvironmentPolicy
+
+
+3. Create An AWS account Alias.
+   
+An Account Alias is a friendly custom name for your AWS account that you can use instead of your account ID (which is usually a bunch of digits) to sign in to the AWS Management Console.
+
+Your AWS account's sign-in page has this URL by default: https://Your_Account_ID.signin.aws.amazon.com/console/
+
+If you create an AWS account alias for your AWS account ID, your sign-in page URL looks more like: https://Your_Account_Alias.signin.aws.amazon.com/console/
+
+Go to IAM Dashboard, Create an AWS Account Alias
+
+4.  👩‍👩‍👧‍👧 IAM Users and User Groups. 
+Create an IAM user Group, e.g a group name like "nextwork-dev-group"
+
+then add IAM Policies. Add the created policy "NextWorkDevEnvironmentPolicy" 
+
+Create an IAM user to add to the IAM User Group.
+Create a user, check the mark  management console access, but for now add the user to a group by selecting "attach permissions from a group".
+Download csv file after creating user to have it saved.
+
+Remember we can  create Policies, then create IAM user Groups then attach policies to the IAM user Groups. Then Cretae IAM users and add to our IAM groups.
 
 
 
+5. Test User's Access.
 
 
-
-
+   
 
 
 

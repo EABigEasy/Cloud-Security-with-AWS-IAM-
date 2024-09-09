@@ -130,7 +130,7 @@ Step 4: Run Simulation to see if allowed or denied.
 
 
 
-### You have to keep track of your resources you created and delete them###
+### You have to keep track of your resources you created and delete them
 
 
 ### Understand Zero Trust Policy ###

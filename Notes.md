@@ -26,3 +26,37 @@ which is generally not recommended because it limits your ability to troubleshoo
 It's always safer and more flexible to have a key pair set up, so you would create a key pair for bigger projects that you work on over a longer period of time.
 
 2.📏 IAM Policies
+IAM manages  access to our AWS Resources.
+we create Policies attach to IAM Groups, Then add IAM users to our IAM groups.
+This is different from a Resourcce Policy.
+
+Key information of an  IAM Policy is " Statemetn, Effect, Resource,Action".
+
+Select Cretate Policy, we can use visual steps or JSON.
+
+Sample json code is :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
